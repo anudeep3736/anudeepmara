@@ -1,13 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>anudeepmara</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anudeep Mara · QA &amp; Data Engineer</title>
+<meta name="description" content="Anudeep Mara: data analysis, report validation, ETL testing and SQL. Open to QA and data engineering roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef2f6; --surface:#ffffff; --ink:#14213d; --muted:#51607a;
+  --line:#d3dce8; --accent:#0b5fd9; --pass:#1a8a5a; --accent-ink:#ffffff;
+  --head:"Bricolage Grotesque","Trebuchet MS",sans-serif;
+  --body:"Instrument Sans","Segoe UI",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0e1626; --surface:#16213a; --ink:#e8eef9; --muted:#9fb0cb;
+    --line:#26355a; --accent:#6aa5ff; --pass:#4cc38a; --accent-ink:#0e1626;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--body)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+header.top b{font:700 1.1rem var(--head)}
+nav a{margin-left:22px;color:var(--muted);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 40px}
+.hero h1{font:700 clamp(2.6rem,7vw,4.6rem)/1.02 var(--head);margin:0 0 18px;letter-spacing:-.02em}
+.hero p.lead{font-size:1.25rem;max-width:34em;color:var(--muted);margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:stretch;margin-top:44px}
+.flow div.step{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px}
+.flow h3{margin:0 0 8px;font:700 1rem var(--head)}
+.flow ul{list-style:none;margin:0;padding:0;font-size:.95rem;color:var(--muted)}
+.flow li::before{content:"\2713\00a0";color:var(--pass);font-weight:700}
+.flow .arrow{align-self:center;color:var(--muted);font-size:1.4rem}
+@media (max-width:700px){.flow{grid-template-columns:1fr}.flow .arrow{transform:rotate(90deg);text-align:center}}
+section{padding:48px 0;border-top:1px solid var(--line)}
+section h2{font:700 1.9rem var(--head);margin:0 0 20px;letter-spacing:-.01em}
+.about p{max-width:42em;margin:0 0 14px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.skills div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+.skills h3{margin:0 0 10px;font:700 1.05rem var(--head)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.tags li{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.9rem}
+.job{display:grid;grid-template-columns:170px 1fr;gap:24px;margin-bottom:8px}
+.job .when{color:var(--muted);font-weight:500}
+.job h3{margin:0;font:700 1.2rem var(--head)}
+.job ul{margin:10px 0 0;padding-left:20px}
+.job li{margin-bottom:6px}
+@media (max-width:640px){.job{grid-template-columns:1fr;gap:4px}}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.projects article{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px}
+.projects h3{margin:0 0 8px;font:700 1.1rem var(--head)}
+.projects p{margin:0 0 12px;color:var(--muted)}
+.contact p{max-width:34em}
+footer{padding:28px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Hello, this is my webpage123456789</h1>
+<div class="wrap">
+  <header class="top">
+    <b>Anudeep Mara</b>
+    <nav aria-label="Primary">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
   </header>
+
+  <main>
+    <div class="hero">
+      <h1>I make sure the numbers you see are the numbers that are true.</h1>
+      <p class="lead">I’m Anudeep, a data analyst and QA engineer with a background in banking. I validate reports, test ETL pipelines and write the SQL that proves it, and I’m looking for QA and data engineering roles.</p>
+      <div class="btns">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/anudeepmara/" target="_blank" rel="noopener">View LinkedIn</a>
+      </div>
+
+      <div class="flow" aria-label="Where I test the data pipeline">
+        <div class="step"><h3>Source data</h3><ul><li>SQL reconciliation</li><li>Row counts and nulls</li></ul></div>
+        <div class="arrow" aria-hidden="true">&rarr;</div>
+        <div class="step"><h3>ETL</h3><ul><li>Transformation rules</li><li>Load validation</li></ul></div>
+        <div class="arrow" aria-hidden="true">&rarr;</div>
+        <div class="step"><h3>Reports</h3><ul><li>SSRS, Tableau, Power BI</li><li>Defects logged and tracked</li></ul></div>
+      </div>
+    </div>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>I work where data engineering meets quality assurance. My background is in data analysis and QA, including time at Extraco Bank, where accurate reporting matters because decisions depend on it.</p>
+      <p>I like finding the gap between what a report says and what the source data says, writing it up clearly, and working with developers until it’s closed. I’m now moving toward QA and data engineering roles where I can build and test pipelines end to end.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div><h3>Data and SQL</h3><ul class="tags"><li>SQL</li><li>Data analysis</li><li>Data validation</li><li>Reconciliation</li></ul></div>
+        <div><h3>Reporting tools</h3><ul class="tags"><li>SSRS</li><li>Tableau</li><li>Power BI</li><li>Report validation</li></ul></div>
+        <div><h3>Testing</h3><ul class="tags"><li>ETL testing</li><li>Test case design</li><li>Defect management</li><li>Regression testing</li></ul></div>
+        <div><h3>Process and tools</h3><ul class="tags"><li>Azure DevOps</li><li>Agile</li><li>Documentation</li></ul></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="when">[Start year] – [End year]</div>
+        <div>
+          <h3>[Job title], Extraco Bank</h3>
+          <ul>
+            <li>Validated SSRS, Tableau and Power BI reports against source data using SQL.</li>
+            <li>Tested ETL processes and logged defects in Azure DevOps through to resolution.</li>
+            <li>[Add one result with a number, such as reports validated or defects caught.]</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article><h3>[Project name]</h3><p>[One sentence on the problem and what you built or tested.]</p><ul class="tags"><li>SQL</li><li>Power BI</li></ul></article>
+        <article><h3>[Project name]</h3><p>[One sentence on the problem and what you built or tested.]</p><ul class="tags"><li>ETL</li><li>Azure DevOps</li></ul></article>
+        <article><h3>[Project name]</h3><p>[One sentence on the problem and what you built or tested.]</p><ul class="tags"><li>Tableau</li><li>SQL</li></ul></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>I’m open to QA engineer and data engineering roles. The quickest way to reach me is email or LinkedIn.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:you@example.com">you@example.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/anudeepmara/" target="_blank" rel="noopener">linkedin.com/in/anudeepmara</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Anudeep Mara</footer>
+</div>
 </body>
 </html>
